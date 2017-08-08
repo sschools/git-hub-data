@@ -6,11 +6,20 @@ header {
         linear-gradient(-135deg, #313033 10px, transparent 0) 0 10px,
         linear-gradient(135deg, #313033 10px, #d5d2db 0) 0 10px;
   background-color: #313033;
-  background-position: left bottom !important;
-  background-repeat: repeat-x !important;
+  background-position: left bottom;
+  background-repeat: repeat-x;
   /* otherwise these will be overridden when you add the inline styles with js. */
   background-size: 20px 20px;
   margin:0;
+}
+
+h1 {
+  font-family: "Courier", serif;
+  text-align: center;
+  font-weight: 100;
+  font-size: 3em;
+  color: #d5d2db;
+  padding-top: 10px;
 }
 
 main {
@@ -20,22 +29,56 @@ main {
   margin: 0;
   top: 0;
   display: flex;
+  justify-content: space-around;
 }
 
 main div {
-  margin-top: 20px;
+  margin: 20px 0;
 }
 
 h2 {
   font-family: "Courier", serif;
+  font-size: 2em;
   margin:0;
+  padding-left: 20px;
 }
 
 #info {
-  flex-basis: 30%;
-  padding-left: 20%;
+  flex-basis: 25%;
+  padding-left: 150px;
 }
 
 #bio {
-  flex-basis: 69%;
+  flex-basis: 50%;
+}
+
+.info-element, #bio p {
+  margin-top: 20px;
+}
+
+.bio-element {
+  display: flex;
+}
+
+p {
+  color: #2eb2a9;
+  margin: 5px;
+  font-size: 0.8em
+}
+
+#bio p, span {
+  color: #313033;
+}
+
+#bio p {
+  flex-basis: 60%;
+  padding-right: 30px;
+  padding-left: 20px;
+  border-left: 1px solid #313033;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
 }
